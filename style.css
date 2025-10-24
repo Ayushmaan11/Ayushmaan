@@ -1,0 +1,568 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Navbar{
+    display: flex;
+    background-color: #1E2636;
+    font-family: League Spartan, serif;
+    padding: 10px 50px;
+}
+
+.Navbar .logo{
+    display:flex;
+    color: white;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.Navbar-items{
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    padding: 10px 50px;
+}
+
+.Navbar-items li{
+    padding: 10px ;
+    font-size: 25px;
+}
+
+.Navbar-items li a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px){
+    .Navbar-items{
+        display: none;
+    }
+    .logo{
+        font-size: 24px;
+    }
+}
+
+/*Home section*/
+
+
+.Home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 40px;
+    font-family: 'League Spartan', sans-serif;
+    height: 100vh;
+}
+
+.hero-text{
+    padding: 20px;
+    line-height: 0.9;
+}
+
+.main-text{
+    font-size: 150px;
+    margin-bottom: 20px;
+    letter-spacing: -5px;
+    color: #1E2636;
+}
+
+.main-text span{
+    color: #7C808B;
+}
+
+.hero-text p{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: sanchez, serif;;
+}
+
+.hero-image img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*About Section*/
+
+.About{
+    display:grid;
+    grid-template-columns: 0.5fr 1fr;
+    padding: 50px;
+    height: 100vh;
+}
+
+.about-image img{
+    width: 100%;
+    height: auto;
+}
+
+.about-content{
+    padding: 30px;
+    line-height: 1.5;
+}
+
+.about-title{
+    font-size: 150px;
+    color: #1E2636;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.para{
+    font-size: 40px;
+}
+
+.para .about-para-1, .about-para-2{
+    margin-top: 20px;
+}
+
+
+/*card*/
+.Project-section{
+    background-color: #e3e6e0;
+}
+
+.projects-title h1{
+    padding-left: 50px;
+    padding-bottom: 50px;
+    font-size: 150px;
+    color:  #1E2636;
+    font-family: 'League Spartan', sans-serif;
+}
+.Projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+    border-radius: 38px;
+    background-color: #1E2636;
+    width: 500px;
+    height: 600px;
+    justify-self: center;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 30px black;
+}
+
+.card img{
+    border-top-left-radius: 38px;
+    border-top-right-radius: 38px;
+    width: 500px;
+    height: 250px;
+}
+
+.card-content{
+    padding: 20px;
+    font-family: 'Sanchez', serif;
+}
+
+.card-content .card1-title{
+    color: #e3e6e0;
+    font-size: 40px;
+}
+
+.card-content .card1-text{
+    padding-top: 10px;
+    color: #e3e6e0;
+    font-size:26px;
+}
+
+/*My Gigs*/
+
+.mygigsSection{
+    padding:50px;
+}
+
+.gigTitle .myGigs{
+    color: #1E2636;
+    font-size: 150px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.gigWrapper{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gigImage img{
+    border-radius: 50px;
+    box-shadow: 10px 10px 30px black;
+}
+
+.gigInfo{
+    justify-self: left;
+}
+
+.gigInfo .gigName{
+    font-size: 50px;
+    color:#1E2636;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.gigInfo .gigDescription{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #7c808b;
+}
+
+.gigInfo .gigPrice{
+    font-size: 50px;
+    color: #1E2636;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.buyButton a>button{
+    background-color: #e3e6e0;
+    border: none;
+    padding: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.buyButton a>button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 50px grey;
+    padding: 35px;
+    transition: ease 0.8s;
+}
+
+.buyButton button a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    color: white;
+    height: 100px;
+    background-color: #1E2636;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: League Spartan, serif;
+}
+
+footer .socials{
+    align-content: start;
+    justify-self: right;
+    font-size: 60px;
+    padding: 0px 20px;
+    color: white;
+}
+
+footer .socials a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 400;
+}
+
+@media (max-width: 1600px) {
+.Home{
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: auto;
+    padding: 50px;
+}
+.hero-text{
+          
+          padding: 10px;
+          line-height: 0.9;
+}
+
+.main-text{
+    font-size: 90px;
+    margin-bottom: 20px;
+    letter-spacing: -5px
+}
+
+.hero-image img{
+    width: 100%;
+    height: auto;
+}
+
+.About{
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: auto;
+    padding: 50px;
+}
+
+.about-title{
+    font-size: 90px;
+    margin-bottom: 20px;
+    letter-spacing: -5px;
+}
+.para{
+    font-size: 24px;
+}
+
+.about-image img{
+    display: none;
+}
+
+.projects-title h1{
+    font-size: 90px;
+    letter-spacing: -5px;
+    text-align: center;
+}
+.Projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+    border-radius: 38px;
+    background-color: #1E2636;
+    width: 300px;
+    height: 400px;
+    justify-self: center;
+    margin-bottom: 50px;
+}
+
+.card img{
+    border-top-left-radius: 38px;
+    border-top-right-radius: 38px;
+    width: 300px;
+    height: 200px;
+}
+
+.card-content{
+    padding: 20px;
+    font-family: 'Sanchez', serif;
+}
+
+.card-content .card1-title{
+    color: #e3e6e0;
+    font-size: 20px;
+}
+
+.card-content .card1-text{
+    padding-top: 10px;
+    color: #e3e6e0;
+    font-size:16px;
+}
+
+}
+
+
+
+@media(min-width: 370px) and (max-width: 1020px){
+    .Navbar .logo{
+        font-size: 24px;
+    }
+    .main-text{
+        font-size: 50px;
+        line-height: 0.9;
+        letter-spacing: -1px;
+    }
+    .hero-text p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .about-content{
+        width: auto;
+    }
+    .about-title{
+        text-align: left;
+        font-size: 50px;
+        letter-spacing: -1px;
+    }
+    .para{
+        font-size: 20px;
+        text-align: left;
+    }
+     .projects-title h1{
+    font-size: 50px;
+}
+.Projects{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card{
+    border-radius: 38px;
+    background-color: #1E2636;
+    width: 300px;
+    height: 400px;
+    justify-self: center;
+    margin-bottom: 50px;
+}
+
+.card img{
+    border-top-left-radius: 38px;
+    border-top-right-radius: 38px;
+    width: 300px;
+    height: 200px;
+}
+
+.card-content{
+    padding: 20px;
+    font-family: 'Sanchez', serif;
+}
+
+.card-content .card1-title{
+    color: #e3e6e0;
+    font-size: 20px;
+}
+
+.card-content .card1-text{
+    padding-top: 10px;
+    color: #e3e6e0;
+    font-size:16px;
+}
+}
+
+@media(max-width: 369px){
+    .Navbar .logo{
+        font-size: 20px;
+    }
+    .main-text{
+        font-size: 50px;
+        line-height: 0.9;
+        letter-spacing: -1px;
+        text-align: left;
+    }
+    .hero-text p{
+        font-size: 10px;
+    }
+
+    .about-title{
+        font-size: 50px;
+
+    }
+    .para{
+        font-size: 10px;
+        text-align: left;
+    }
+    .projects-title h1{
+    text-align: left;
+    font-size: 50px;
+}
+.Projects{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card{
+    border-radius: 38px;
+    background-color: #1E2636;
+    width: 300px;
+    height: 400px;
+    justify-self: center;
+    margin-bottom: 50px;
+}
+
+.card img{
+    border-top-left-radius: 38px;
+    border-top-right-radius: 38px;
+    width: 300px;
+    height: 200px;
+}
+
+.card-content{
+    padding: 20px;
+    font-family: 'Sanchez', serif;
+}
+
+.card-content .card1-title{
+    color: #e3e6e0;
+    font-size: 20px;
+}
+
+.card-content .card1-text{
+    padding-top: 10px;
+    color: #e3e6e0;
+    font-size:16px;
+}
+
+.mygigsSection{
+    padding:0px;
+}
+
+.gigTitle .myGigs{
+    color: #1E2636;
+    font-size: 50px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.gigWrapper{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gigImage img{
+    border-radius: 50px;
+    box-shadow: 10px 10px 30px black;
+    width: 200px;
+}
+
+.gigInfo{
+    justify-self: left;
+}
+
+.gigInfo .gigName{
+    font-size: 20px;
+    color:#1E2636;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.gigInfo .gigDescription{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #7c808b;
+}
+
+.gigInfo .gigPrice{
+    font-size: 20px;
+    color: #1E2636;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.buyButton a>button{
+    background-color: #e3e6e0;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.buyButton a>button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 50px grey;
+    padding: 35px;
+    transition: ease 0.8s;
+}
+
+.buyButton button a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+}
+
+
+@media(min-width:700px) and (max-width:1020px){
+    .Projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+@media(min-width: 1279px) and (max-width: 1437px){
+    
+}
