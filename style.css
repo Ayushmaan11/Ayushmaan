@@ -173,26 +173,36 @@
 
 .mygigsSection{
     padding:50px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .gigTitle .myGigs{
     color: #1E2636;
     font-size: 150px;
     font-family: 'League Spartan', sans-serif;
+    text-align: center;
 }
 
 .gigWrapper{
     padding-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 60px;
 }
 
 .gigImage img{
     border-radius: 50px;
     box-shadow: 10px 10px 30px black;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
 }
 
 .gigInfo{
+    padding: 20px;
     justify-self: left;
 }
 
@@ -200,18 +210,23 @@
     font-size: 50px;
     color:#1E2636;
     font-family: 'League Spartan', sans-serif;
+    margin-bottom: 15px;
+
 }
 
 .gigInfo .gigDescription{
     font-size: 30px;
     text-transform: uppercase;
     color: #7c808b;
+    margin-bottom: 20px;
+    line-height: 1.3;
 }
 
 .gigInfo .gigPrice{
     font-size: 50px;
     color: #1E2636;
     font-family: 'League Spartan', sans-serif;
+    margin-bottom: 25px;
 }
 
 .buyButton a>button{
@@ -221,14 +236,15 @@
     border-radius: 50px;
     cursor: pointer;
     font-size: 25px;
+    font-family: 'League Spartan', sans-serif;
+    transition: all 0.3s ease;
 }
 
 .buyButton a>button:hover{
     background-color: black;
     color: white;
     box-shadow: 10px 10px 50px grey;
-    padding: 35px;
-    transition: ease 0.8s;
+    transform: translateY(-3px);
 }
 
 .buyButton button a{
@@ -244,6 +260,10 @@ footer{
     padding: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 200px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 footer h1{
@@ -251,14 +271,15 @@ footer h1{
     font-size: 60px;
     font-weight: 500;
     font-family: League Spartan, serif;
+    margin: 0;
 }
 
 footer .socials{
-    align-content: start;
-    justify-self: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
     font-size: 60px;
-    padding: 0px 20px;
-    color: white;
 }
 
 footer .socials a{
@@ -266,7 +287,13 @@ footer .socials a{
     text-decoration: none;
     padding: 20px;
     font-weight: 400;
+    transition: color 0.3s ease;
 }
+
+footer .socials a:hover{
+    color: #e3e6e0;
+}
+
 
 @media (max-width: 1600px) {
 .Home{
@@ -422,6 +449,8 @@ footer .socials a{
     color: #e3e6e0;
     font-size:16px;
 }
+
+
 }
 
 @media(max-width: 369px){
@@ -487,72 +516,8 @@ footer .socials a{
     font-size:16px;
 }
 
-.mygigsSection{
-    padding:0px;
-}
 
-.gigTitle .myGigs{
-    color: #1E2636;
-    font-size: 50px;
-    font-family: 'League Spartan', sans-serif;
-}
 
-.gigWrapper{
-    padding-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.gigImage img{
-    border-radius: 50px;
-    box-shadow: 10px 10px 30px black;
-    width: 200px;
-}
-
-.gigInfo{
-    justify-self: left;
-}
-
-.gigInfo .gigName{
-    font-size: 20px;
-    color:#1E2636;
-    font-family: 'League Spartan', sans-serif;
-}
-
-.gigInfo .gigDescription{
-    font-size: 10px;
-    text-transform: uppercase;
-    color: #7c808b;
-}
-
-.gigInfo .gigPrice{
-    font-size: 20px;
-    color: #1E2636;
-    font-family: 'League Spartan', sans-serif;
-}
-
-.buyButton a>button{
-    background-color: #e3e6e0;
-    border: none;
-    padding: 10px;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 10px;
-}
-
-.buyButton a>button:hover{
-    background-color: black;
-    color: white;
-    box-shadow: 10px 10px 50px grey;
-    padding: 35px;
-    transition: ease 0.8s;
-}
-
-.buyButton button a{
-    font-size: 25px;
-    text-decoration: none;
-    color: black;
-}
 }
 
 
@@ -563,6 +528,194 @@ footer .socials a{
 }
 }
 
-@media(min-width: 1279px) and (max-width: 1437px){
+@media(max-width: 1200px){
+    .gigTitle .myGigs{
+        font-size: 100px;
+    }
+
+    .gigInfo .gigName{
+        font-size: 40px;
+    }
+    .gigInfo .gigDescription{
+        font-size: 24px;
+    }
+    .gigInfo .gigPrice{
+        font-size: 40px;
+    }
+
+    footer h1{
+        font-size: 40px;
+    }
+
+    footer .socials{
+        font-size: 40px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1024px){
+    .gigWrapper{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .gigImage{
+        justify-self: center;
+    }
+
+    .gigImage img{
+        max-width: 500px;
+        border-radius: 30px;
+    }
+    .gigInfo{
+        justify-self: center;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    footer .socials{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .mygigsSection{
+        padding: 30px 20px;
+    }
+
+    .gigTitle .myGigs{
+        font-size: 60px;
+        letter-spacing: -2px;
+    }
+    .gigWrapper{
+        padding-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .gigImage img{
+        border-radius: 20px;
+        max-width: 100%;
+
+    }
+
+    .gigInfo .gigName{
+        font-size: 32px;
+    }
+        .gigInfo .gigDescription{
+        font-size: 18px;
+        line-height: 1.4;
+    }
     
+    .gigInfo .gigPrice{
+        font-size: 32px;
+    }
+    
+    .buyButton a > button{
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+    
+    footer{
+        padding: 0px 20px;
+        min-height: 150px;
+    }
+    
+    footer h1{
+        font-size: 32px;
+    }
+    
+    footer .socials{
+        font-size: 32px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mygigsSection{
+        padding: 20px 15px;
+    }
+    
+    .gigTitle .myGigs{
+        font-size: 40px;
+        letter-spacing: -1px;
+    }
+    
+    .gigWrapper{
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .gigInfo{
+        padding: 0 10px;
+    }
+    
+    .gigInfo .gigName{
+        font-size: 24px;
+    }
+    
+    .gigInfo .gigDescription{
+        font-size: 14px;
+    }
+    
+    .gigInfo .gigPrice{
+        font-size: 24px;
+    }
+    
+    .buyButton a > button{
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+    
+    footer{
+        padding: 20px 15px;
+    }
+    
+    footer h1{
+        font-size: 24px;
+    }
+    
+    footer .socials{
+        font-size: 24px;
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 369px) {
+    .gigTitle .myGigs{
+        font-size: 35px;
+    }
+    
+    .gigInfo .gigName{
+        font-size: 20px;
+    }
+    
+    .gigInfo .gigDescription{
+        font-size: 12px;
+    }
+    
+    .gigInfo .gigPrice{
+        font-size: 20px;
+    }
+    
+    .buyButton a > button{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    footer h1{
+        font-size: 20px;
+    }
+    
+    footer .socials{
+        font-size: 20px;
+    }
 }
